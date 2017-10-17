@@ -1,3 +1,5 @@
 languaje: vue_js
 vue_js:
   - "7"
+script:
+  - vue_js ./test/test_integration_lazy.js
