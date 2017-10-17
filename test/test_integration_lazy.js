@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import MyComponent from './MyComponent.vue'
+import MyComponent from './index.html'
 // helper function that mounts and returns the rendered text
 function getRenderedText (Component, propsData) {
   const Ctor = Vue.extend(Component)
