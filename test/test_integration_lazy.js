@@ -7,7 +7,7 @@ function getRenderedText (Component, propsData) {
   return vm.$el.textContent
 }
 describe('MyComponent', () => {
-  it('has a created hook', () => {
+  it('llama a una funcion', () => {
     expect(typeof MyComponent.created).toBe('function')
   })
 })
