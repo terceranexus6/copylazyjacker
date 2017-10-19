@@ -8,6 +8,8 @@ In the future we want to offer a higher scanning service with a curating tool fo
 
 [![Made with HACKING and Open Source](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
+[![Build Status](https://travis-ci.org/terceranexus6/copylazyjacker.svg?branch=master)](https://travis-ci.org/terceranexus6/copylazyjacker)
+
 Our service pretends to rely in open software and different tools, such as:
 
 1. Python and ruby for the scripts
