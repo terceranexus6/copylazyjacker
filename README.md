@@ -2,7 +2,7 @@
 
 This project pretends to offer a service similar to _metasploit_ which allows the user to scan a certain webpage looking for **vulnerabilities**. This tool is supposed to be user-friendly, in order to offer a  quick life-saver service for the ones who are not very related to security but even though concerned. 
 
-But remember! don't rely your proffesional software security in fast scanning, ask a proffesional!
+But remember! Don't rely your proffesional software security in fast scanning, ask a proffesional!
 
 In the future we want to offer a higher scanning service with a curating tool for domains and certain organizations. **_Unsecure pages, beware!_**
 
