@@ -1,6 +1,6 @@
 # Lazy Hacker
 
-This project pretends to offer a service similar to _metasploit_ which allows the user to scan a certain webpage looking for **vulnerabilities**. This tool is supposed to be user-friendly, in order to offer a  quick life-saver service for the ones who are not very related to security but even though concerned. 
+This project pretends to offer a service similar to _metasploit_ which allows the user to scan a certain webpage looking for **vulnerabilities**. This tool is supposed to be user-friendly, in order to offer a  quick life-saver service for the ones who are not very related to security but even though concerned.
 
 But remember! Don't rely your proffesional software security in fast scanning, ask a proffesional!
 
@@ -14,6 +14,7 @@ Our service pretends to rely in open software and different tools, such as:
 
 1. Python and ruby for the scripts
 2. MongoDB for the databases
-3. vue.js and deepstreamhub for the realtime data 
+3. vue.js and deepstreamhub for the realtime data
 4. nmap for the vulnerabilities scanning
 
+Despliegue http://copylazyjacker.herokuapp.com/
