@@ -17,4 +17,4 @@ Our service pretends to rely in open software and different tools, such as:
 3. vue.js and deepstreamhub for the realtime data
 4. nmap for the vulnerabilities scanning
 
-Desployment https://copylazyjacker.herokuapp.com/
+Deployment https://copylazyjacker.herokuapp.com/
