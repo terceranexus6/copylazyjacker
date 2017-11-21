@@ -18,4 +18,4 @@ Our service pretends to rely in open software and different tools, such as:
 4. nmap for the vulnerabilities scanning
 
 Deployment https://copylazyjacker.herokuapp.com/
-Container https://hub.docker.com/r/terceranexus6/copylazyjacker/
+Container https://hub.docker.com/r/terceranexus6/copylazyjacker
