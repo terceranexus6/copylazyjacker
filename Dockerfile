@@ -1,11 +1,9 @@
-FROM ubuntu:16.04
+FROM python:3
 
 MAINTAINER Paula de la Hoz <inversealien@protonmail.com>
 
-RUN apt-get update
-RUN apt-get install -y python python-pip git
-RUN git clone https://github.com/terceranexus6/copylazyjacker proyecto
-RUN pip install -r proyecto/requirements.txt
+WORKDIR /usr/src/app
+COPY . .
+RUN pip install -r requirements.txt
 EXPOSE 8000
-WORKDIR proyecto
-CMD gunicorn app:app --log-file=- - --bind 0.0.0.0:8000
+CMD gunicorn app:app --bind 0.0.0.0:8000
