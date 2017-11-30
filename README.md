@@ -20,4 +20,4 @@ Our service pretends to rely in open software and different tools, such as:
 Deployment https://copylazyjacker.herokuapp.com/
 Container: https://copylazyjacker-bdrfakgdkl.now.sh
 
-Dockerfile en Dockerhub: https://hub.docker.com/r/terceranexus6/copylazyhacker
+Dockerfile en Dockerhub: https://hub.docker.com/r/terceranexus6/copylazyjacker
