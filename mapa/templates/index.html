@@ -28,14 +28,14 @@
 <body>
 <div>
 	<h1>Censorship Map</h1>
-	<p>Use your mouse to explore internet censorship worlwide</p>
+	<p>Use your mouse to explore internet censorship worlwide. Click to see more info about censorship poped-up.</p>
 
 	<img src="http://orig04.deviantart.net/bad5/f/2016/317/e/6/post_cyberpunk_world__commission__by_rvbomally-daobobh.png" width="1024" height="768" usemap="#worldmap" alt="" />
 	<map name="worldmap">
-		<area shape="rect" coords="1017,165,976,190" href="#japan" title="Japan" alt="japan" />
-		<area shape="rect" coords="563,91,573,107,576,116,561,94,579,119,561,125" href="#UK" title="UK" alt="UK" />
-		<area shape="rect" coords="577,152,551,171" href="#spain" title="Spain" alt="spain" />
-		<area shape="poly" coords="161,72,239,53,303,55,357,58,373,76,401,111,372,142,326,178,281,204,250,247,221,221,198,173,206,109,198,87" href="#usa" title="USA" alt="USA" />
+		<area shape="rect" coords="1017,165,976,190" href="javascript:myFunction2(1)" title="Japan" alt="japan" />
+		<area shape="rect" coords="563,91,573,107,576,116,561,94,579,119,561,125" href="javascript:myFunction2(2)" title="UK" alt="UK" />
+		<area shape="rect" coords="577,152,551,171" href="javascript:myFunction2(3)" title="Spain" alt="spain" />
+		<area shape="poly" coords="161,72,239,53,303,55,357,58,373,76,401,111,372,142,326,178,281,204,250,247,221,221,198,173,206,109,198,87" href="javascript:myFunction2(4)" title="USA" alt="USA" />
 </map>
 </div>
 
@@ -49,6 +49,30 @@ $(document).ready(function(e) {
 		alert($(this).attr('alt') + ' clicked');
 	});
 });
+</script>
+
+<script>
+function myFunction() {
+    var x = location.href;
+    document.getElementById("demo").innerHTML = x;
+}
+
+function myFunction2(id) {
+	var x = 'information';
+	if(id == 1){
+		x = 'information 1';
+	} else if(id == 2){
+		x = 'information 2';
+	} else if(id == 3){
+		x = 'information 3';
+	} else if(id == 4){
+		x = 'information 4';
+	} else {
+		x = 'not found';
+	}
+
+  alert(x);
+}
 </script>
 </body>
 </html>
