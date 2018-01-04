@@ -6,16 +6,20 @@ But remember! Don't rely your proffesional software security in fast scanning, a
 
 In the future we want to offer a higher scanning service with a curating tool for domains and certain organizations. **_Unsecure pages, beware!_**
 
+# Internet Censorhsip app
+
+This app provides an interactive internet censorhsip map which contains information about censorship in different countries.
+
 [![Made with HACKING and Open Source](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 [![Build Status](https://travis-ci.org/terceranexus6/copylazyjacker.svg?branch=master)](https://travis-ci.org/terceranexus6/copylazyjacker)
 
-Our service pretends to rely in open software and different tools, such as:
+Our service relies on:
 
-1. Python and ruby for the scripts
-2. MongoDB for the databases
-3. vue.js and deepstreamhub for the realtime data
-4. nmap for the vulnerabilities scanning
+- Python (Flask)
+- Heroku
+- Dockerhub
+- Azure
 
 Deployment https://copylazyjacker.herokuapp.com/
 Container: https://copylazyjacker-bdrfakgdkl.now.sh
