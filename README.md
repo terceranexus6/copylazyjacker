@@ -6,9 +6,11 @@ But remember! Don't rely your proffesional software security in fast scanning, a
 
 In the future we want to offer a higher scanning service with a curating tool for domains and certain organizations. **_Unsecure pages, beware!_**
 
-# Internet Censorhsip app
+# Internet Censorship app
 
 This app provides an interactive internet censorhsip map which contains information about censorship in different countries.
+
+This will ping to different webpages using proxies from different countries, trying to check if those pages are available for users in that country.
 
 [![Made with HACKING and Open Source](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
@@ -16,12 +18,33 @@ This app provides an interactive internet censorhsip map which contains informat
 
 Our service relies on:
 
-- Python (Flask)
+- Python (Flask+scripts)
 - Heroku
-- Dockerhub
-- Azure
+- now.sh + Dockerhub
+- Azure client
+
+## Python
+
+Python will be used in Flask to provide a way of launching the app. The manage file will render the index. In the future I intend to extends the manage file in order to make a reliable MVC application, maybe using **Django** instead.
+
+On the other hand I use python for a script that iterates a list of proxies and webpages and check their availability from different countries.
+
+## Heroku
+
+Heroku is used to deploy the app. This is the link:
 
 Deployment https://copylazyjacker.herokuapp.com/
+
+For this, I linked both the github repository with Heroku.
+
+## Container
+
+For containing I will be using now.sh and dockerhub.
+
 Container: https://copylazyjacker-bdrfakgdkl.now.sh
 
 Dockerfile en Dockerhub: https://hub.docker.com/r/terceranexus6/copylazyjacker
+
+## Azure client + brew + vagrant
+
+First I install [brew](https://docs.brew.sh/Installation.html) . Once it's installed I configure the [azure client](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) on it using `brew install azure-cli` as specified. For the virtual machine configuration I use a Vagrantfile specifying the details of the machine. 
