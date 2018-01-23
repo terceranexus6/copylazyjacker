@@ -14,7 +14,11 @@ This will ping to different webpages using proxies from different countries, try
 
 [![Made with HACKING and Open Source](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
+## Continuous integration:
+
 [![Build Status](https://travis-ci.org/terceranexus6/copylazyjacker.svg?branch=master)](https://travis-ci.org/terceranexus6/copylazyjacker)
+
+![](https://github.com/terceranexus6/copylazyjacker/blob/master/images/photo_2018-01-23_11-18-54.jpg?raw=true)
 
 Our service relies on:
 
@@ -25,11 +29,15 @@ Our service relies on:
 
 ## Python
 
+![](https://github.com/terceranexus6/copylazyjacker/blob/master/images/photo_2018-01-23_11-19-02.jpg?raw=true)
+
 Python will be used in Flask to provide a way of launching the app. The manage file will render the index. In the future I intend to extends the manage file in order to make a reliable MVC application, maybe using **Django** instead.
 
 On the other hand I use python for a script that iterates a list of proxies and webpages and check their availability from different countries.
 
 ## Heroku
+
+![](https://github.com/terceranexus6/copylazyjacker/blob/master/images/photo_2018-01-23_11-19-07.jpg?raw=true)
 
 Heroku is used to deploy the app. This is the link:
 
@@ -39,6 +47,8 @@ For this, I linked both the github repository with Heroku.
 
 ## Container
 
+![](https://github.com/terceranexus6/copylazyjacker/blob/master/images/photo_2018-01-23_11-18-32.jpg?raw=true)
+
 For containing I will be using now.sh and dockerhub.
 
 Container: https://copylazyjacker-bdrfakgdkl.now.sh
@@ -46,6 +56,8 @@ Container: https://copylazyjacker-bdrfakgdkl.now.sh
 Dockerfile en Dockerhub: https://hub.docker.com/r/terceranexus6/copylazyjacker
 
 ## Azure + vagrant
+
+![](https://github.com/terceranexus6/copylazyjacker/blob/master/images/photo_2018-01-23_11-18-52.jpg?raw=true)
 
 For deployment using virtual machine, I will be configuring vagrant and Azure-cli.
 
