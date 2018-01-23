@@ -45,6 +45,45 @@ Container: https://copylazyjacker-bdrfakgdkl.now.sh
 
 Dockerfile en Dockerhub: https://hub.docker.com/r/terceranexus6/copylazyjacker
 
-## Azure client + brew + vagrant
+## Azure + vagrant
 
-First I install [brew](https://docs.brew.sh/Installation.html) . Once it's installed I configure the [azure client](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) on it using `brew install azure-cli` as specified. For the virtual machine configuration I use a Vagrantfile specifying the details of the machine. 
+For deployment using virtual machine, I will be configuring vagrant and Azure-cli.
+
+First of all I have to register in azure. Once it's done, I install vagrant:
+
+`sudo apt-get install vagrant`
+
+After installing vagrant, I install the azure-cli plugin for vagrant:
+
+`vagrant box add azure https://github.com/azure/vagrant-azure/raw/v2.0/dummy.box --provider azure`
+`vagrant plugin install vagrant-azure`
+
+Now I logged in in azure using:
+
+`az login`
+
+I initialize vagrant using:
+
+`vagrant init ubuntu/xenial64`
+
+Now I create the azure app:
+
+`az ad sp create-for-rbac --name {appName} --password "{strong password}"`
+
+If permmision error appears, check in the azure platform for the permmision settings, as specified in [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions).
+
+Once it's done, we look for the subscription id here:
+
+`az account list --output table `
+
+now we export to the Vagrantfile the login data using:
+
+```
+export AZURE_TENANT_ID={tenant id}
+export AZURE_CLIENT_ID={AppId}
+export AZURE_SUBSCRIPTION_ID={subscription id}
+export AZURE_CLIENT_SECRET={strong password}
+```
+And we raise the vagrant
+
+`vagrant up --provider=azure`
