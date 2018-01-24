@@ -1,12 +1,15 @@
-from fabric.api import sudo,run, cd
+from fabric.api import sudo,run
 
-#meterse en el dir
 def install_app():
-    #directorio
-    run('cd copylazyjacker/ && pip install -r requirements.txt')
-    #checkear que sea la ultima version del playbook
-    run('git pull')
+    run('git clone https://github.com/terceranexus6/copylazyjacker')
+    with cd('copylazyjacker')
+        run('pip install -r requirements.txt')
+
+def update_app():
+    with cd('copylazyjacker')
+        run('git pull')
+        run('pip install -r requirements.txt')
 
 def start_app():
-    with cd('mapa')
-        run('python app.py')
+    with cd('copylazyjacker/mapa/')
+        run('sudo gunicorn -b 0.0.0.0:80 app:app —log-file=- &')
