@@ -12,4 +12,9 @@ Vagrant.configure('2') do |config|
     azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
   end
 
+  config.vm.provision "ansible" do |ansible|
+    ansible.verbose = "v"
+    ansible.playbook = "playbook.yml"
+  end
+
 end
