@@ -99,3 +99,17 @@ export AZURE_CLIENT_SECRET={strong password}
 And we raise the vagrant
 
 `vagrant up --provider=azure`
+
+Now we wanted to use Ansible and Fabric, **what do we need to change?**
+
+In the Vagrantfile we add:
+
+```
+config.vm.provision "ansible" do |ansible|
+  ansible.become = true
+  ansible.verbose = "v"
+  ansible.playbook = "playbook.yml"
+end
+```
+
+And we write the `playbook.yml`. I decided to add the update, git and python installation in the playbook so not needed to rewrite it in the Fabric file `fabfile.py`, in which I included a `cd` function and `git pull` apart from the application start. 
