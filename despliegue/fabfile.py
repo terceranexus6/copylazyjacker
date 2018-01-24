@@ -7,9 +7,6 @@ def install_app():
     #checkear que sea la ultima version del playbook
     run('git pull')
 
-#borrar repositorio
-def borrar_repo():
-    run('sudo rm -rf ./copylazyjacker')
 
 def start_app():
     with cd('mapa')
