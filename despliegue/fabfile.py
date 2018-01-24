@@ -1,16 +1,16 @@
-from fabric.api import sudo,run
+from fabric.api import sudo,run, cd
 
-#clonar, instalar pip, meterse en el dir
+#meterse en el dir
 def install_app():
-    #descargar repositorio
-    run('git clone https://github.com/terceranexus6/copylazyjacker')
-
-    #instalamos pip
-    run('sudo apt-get install -y python-pip')
-
     #directorio
     run('cd copylazyjacker/ && pip install -r requirements.txt')
+    #checkear que sea la ultima version del playbook
+    run('git pull')
 
 #borrar repositorio
 def borrar_repo():
     run('sudo rm -rf ./copylazyjacker')
+
+def start_app():
+    with cd('mapa')
+        run('python app.py')
