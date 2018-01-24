@@ -1,0 +1,16 @@
+---
+- name: install and start webapp
+  hosts: web
+  remote_user: "{{user}}"
+  tasks:
+
+    - name: Instalar Python
+      apt: name=python state=present
+
+    - name: Instalar Git
+      apt: name=git state=present
+
+    - name: Descargar repositorio de la aplicación
+      git: repo=https://github.com/terceranexus6/copylazyjacker.git
+           dest=/home/"{{user}}"/copylazyjacker
+           version=master
