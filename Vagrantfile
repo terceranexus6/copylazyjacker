@@ -4,6 +4,7 @@ Vagrant.configure('2') do |config|
   # use local ssh key to connect to remote vagrant box
   config.ssh.private_key_path = '~/.ssh/id_rsa'
   config.vm.provider :azure do |azure, override|
+  #config.vm.network ...., ...
 
     # each of the below values will default to use the env vars named as below if not specified explicitly
     azure.tenant_id = ENV['AZURE_TENANT_ID']
