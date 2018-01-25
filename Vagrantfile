@@ -20,8 +20,11 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.provision "ansible" do |ansible|
-    ansible.verbose = "v"
+    ansible.verbose = "vvvvv"
     ansible.playbook = "playbook.yml"
+    ansible.groups = {
+      "app" => ["104.42.15.162"]
+    }
   end
 
 end
