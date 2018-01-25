@@ -114,4 +114,4 @@ end
 
 And we write the `playbook.yml`. I decided to add the update, git and python installation in the playbook so not needed to rewrite it in the Fabric file `fabfile.py`, in which I included a `cd` function and `git pull` apart from the application start.
 
-Despliegue final: 104.42.15.162
+Despliegue final: [lazyjacker.westus.cloudapp.azure.com](lazyjacker.westus.cloudapp.azure.com)
