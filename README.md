@@ -119,4 +119,4 @@ And we write the `playbook.yml`. I decided to add the update, git and python ins
 
 
 
-Despliegue final: [lazyjacker.westus.cloudapp.azure.com](lazyjacker.westus.cloudapp.azure.com)
+Despliegue final: lazyjacker.westus.cloudapp.azure.com
