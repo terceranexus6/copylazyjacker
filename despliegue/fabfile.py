@@ -12,7 +12,7 @@ def update_app():
         run('pip install -r requirements.txt')
 
 def start_app():
-    with cd('copylazyjacker/mapa/'):
+    with cd('copylazyjacker'):
         run('sudo gunicorn -b 0.0.0.0:80 app:app --log-file=- &')
 
 def hola():
