@@ -96,7 +96,7 @@ export AZURE_CLIENT_ID={AppId}
 export AZURE_SUBSCRIPTION_ID={subscription id}
 export AZURE_CLIENT_SECRET={strong password}
 ```
-And we raise the vagrant
+Apart form other details of the VM configuration. When it's done:
 
 `vagrant up --provider=azure`
 
