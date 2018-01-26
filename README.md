@@ -55,7 +55,7 @@ Container: https://copylazyjacker-bdrfakgdkl.now.sh
 
 Dockerfile en Dockerhub: https://hub.docker.com/r/terceranexus6/copylazyjacker
 
-## Azure + vagrant
+## Azure + vagrant + fabric
 
 ![](https://github.com/terceranexus6/copylazyjacker/blob/master/images/photo_2018-01-23_11-18-52.jpg?raw=true)
 
@@ -119,4 +119,4 @@ And we write the `playbook.yml`. I decided to add the update, git and python ins
 
 
 
-Despliegue final: lazyjacker.westus.cloudapp.azure.com
+Despliegue final: lazyjacker.westus.cloudapp.azure.com/status
