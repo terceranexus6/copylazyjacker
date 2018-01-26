@@ -109,9 +109,14 @@ config.vm.provision "ansible" do |ansible|
   ansible.become = true
   ansible.verbose = "v"
   ansible.playbook = "playbook.yml"
+  ansible.groups = {
+    "app" => ["104.42.15.162"]
+  }
 end
 ```
 
-And we write the `playbook.yml`. I decided to add the update, git and python installation in the playbook so not needed to rewrite it in the Fabric file `fabfile.py`, in which I included a `cd` function and `git pull` apart from the application start.
+And we write the `playbook.yml`. I decided to add the update, git and python installation in the playbook so not needed to rewrite it in the Fabric file `fabfile.py`, in which I included install, update and start app.
+
+
 
 Despliegue final: [lazyjacker.westus.cloudapp.azure.com](lazyjacker.westus.cloudapp.azure.com)
